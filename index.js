@@ -33,6 +33,9 @@ const payLoad = {
 app.get("/",(req,res)=>{
   res.send("hello from backend")
 })
+app.get("/check",(req,res)=>{
+  res.send("hello check API")
+})
 app.post("/data", (req, res) => {
   console.log("request recived");
   const userData = req.body;
