@@ -30,7 +30,9 @@ const payLoad = {
 };
 
 // webpush.sendNotification(sub, JSON.stringify(payLoad));
-
+app.get("/",(req,res)=>{
+  res.send("hello from backend")
+})
 app.post("/data", (req, res) => {
   console.log("request recived");
   const userData = req.body;
